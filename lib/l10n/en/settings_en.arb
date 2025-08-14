@@ -1,0 +1,14 @@
+{
+  "settings": "Settings",
+    "appName": "HR Assistant",
+    "changeLanguage": "Change language",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "language": "Language",
+    "switchTheme": "Switch theme",
+    "theme": "Theme",
+    "themeDark": "Dark",
+    "themeLight": "Light",
+    "themeSystem": "System"
+  }
+  

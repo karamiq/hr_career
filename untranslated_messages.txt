@@ -1,0 +1,30 @@
+{
+  "ja": [
+    "requests",
+    "record",
+    "create",
+    "pending",
+    "approved",
+    "rejected",
+    "others",
+    "title",
+    "description",
+    "type",
+    "uploadAttachment",
+    "submit",
+    "sendRequest",
+    "sendRequestDescription",
+    "browse",
+    "settings",
+    "language",
+    "logout",
+    "accountDetails",
+    "changePassword",
+    "documents",
+    "certifications",
+    "skills",
+    "about",
+    "support",
+    "english"
+  ]
+}

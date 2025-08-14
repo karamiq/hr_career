@@ -1,0 +1,16 @@
+{
+    "record": "Record",
+    "create": "Create",
+    "pending": "Pending",
+    "approved": "Approved",
+    "rejected": "Rejected",
+    "others": "Others",
+    "title": "Title",
+    "description": "Description",
+    "type": "Type",
+    "uploadAttachment": "Upload Attachment",
+    "submit": "Submit",
+    "sendRequest": "Send Request",
+    "sendRequestDescription": "Please fill out the form below to send your request. Make sure to provide all required information.",
+    "browse": "Browse"
+}

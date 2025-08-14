@@ -1,0 +1,14 @@
+{
+  "settings": "الإعدادات",
+  "appName": "مساعد الموارد البشرية",
+  "changeLanguage": "تغيير اللغة",
+  "language": "اللغة",
+  "darkMode": "الوضع الداكن",
+  "lightMode": "الوضع الصباحي",
+  "switchTheme": "تغيير اللون",
+  "theme": "المظهر",
+  "themeDark": "داكن",
+  "themeLight": "فاتح",
+  "themeSystem": "النظام",
+  "browse": "تصفح"
+}

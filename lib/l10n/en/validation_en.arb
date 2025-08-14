@@ -1,0 +1,30 @@
+{
+    "fieldRequired": "This field is required",
+    "invalidFieldValue": "Invalid field value",
+    "validationEmail": "Please enter a valid email",
+    "validationMaxLength": "Please complete the required length",
+    "validationPhoneNumber": "Please enter a valid phone number",
+    "validationRequired": "This field is required",
+    "validationUrl": "Please enter a valid URL",
+    "validatorEmail": "The field is not a valid email address",
+    "validatorMaxLength": "The field must be at most {n} characters long",
+    "@validatorMaxLength": {
+      "placeholders": {
+        "n": {}
+      }
+    },
+    "validatorMinLength": "The field must be at least {n} characters long",
+    "@validatorMinLength": {
+      "placeholders": {
+        "n": {}
+      }
+    },
+    "validatorPhoneNumber": "The field is not a valid phone number",
+    "validatorRequired": "The field is required",
+    "validatorUrl": "The field is not a valid URL address",
+    "validatorUseArabicOrKurdishLetters": "Please use Arabic or Kurdish letters",
+    "validatorUseEnglishLetters": "Please use English letters",
+    "requiredRuleMessage": "This field is required",
+  "emailRuleMessage": "Please enter a valid email"
+  
+}

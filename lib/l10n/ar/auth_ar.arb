@@ -1,0 +1,15 @@
+{
+  "login": "تسجيل الدخول",
+  "loginSuccess": "تم تسجيل الدخول بنجاح",
+  "password": "كلمة المرور",
+  "typeYourPasswordHere": "أدخل كلمة المرور هنا",
+  "typeYourUsenameHere": "ادخل اسم المستخدم هنا",
+  "username": "اسم المستخدم",
+  "welcomeAgain": "مرحباً بك مرة أخرى",
+
+  "welcomeTitle": "مرحباً بك في Titanium\nسجل الدخول للمتابعة",
+    "emailHint": "البريد الإلكتروني",
+    "passwordHint": "كلمة المرور",
+
+    "logout": "تسجيل الخروج"
+}

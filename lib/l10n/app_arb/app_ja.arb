@@ -1,0 +1,61 @@
+{
+  "fieldRequired": "この項目は必須です",
+  "invalidFieldValue": "無効な値です",
+  "validationEmail": "有効なメールアドレスを入力してください",
+  "validationMaxLength": "必要な文字数を入力してください",
+  "validationPhoneNumber": "有効な電話番号を入力してください",
+  "validationRequired": "この項目は必須です",
+  "validationUrl": "有効なURLを入力してください",
+  "validatorEmail": "有効なメールアドレスではありません",
+  "validatorMaxLength": "{n}文字以内で入力してください",
+  "@validatorMaxLength": {
+    "placeholders": {
+      "n": {}
+    }
+  },
+  "validatorMinLength": "{n}文字以上で入力してください",
+  "@validatorMinLength": {
+    "placeholders": {
+      "n": {}
+    }
+  },
+  "validatorPhoneNumber": "有効な電話番号ではありません",
+  "validatorRequired": "この項目は必須です",
+  "validatorUrl": "有効なURLではありません",
+  "validatorUseArabicOrKurdishLetters": "アラビア語またはクルド語の文字を使用してください",
+  "validatorUseEnglishLetters": "英字を使用してください",
+  "requiredRuleMessage": "この項目は必須です",
+  "emailRuleMessage": "有効なメールアドレスを入力してください",
+  "appName": "人事アシスタント",
+  "changeLanguage": "言語を変更",
+  "darkMode": "ダークモード",
+  "lightMode": "ライトモード",
+  "switchTheme": "テーマを切り替え",
+  "theme": "テーマ",
+  "themeDark": "ダーク",
+  "themeLight": "ライト",
+  "themeSystem": "システム",
+  "cancel": "キャンセル",
+  "crop": "画像を切り取る",
+  "select": "選択",
+  "pickDate": "日付を選択",
+  "relocate": "位置を再設定",
+  "retry": "再試行",
+  "search": "検索",
+  "login": "ログイン",
+  "loginSuccess": "ログインに成功しました",
+  "password": "パスワード",
+  "typeYourPasswordHere": "ここにパスワードを入力してください",
+  "typeYourUsenameHere": "ここにユーザー名を入力してください",
+  "username": "ユーザー名",
+  "welcomeAgain": "おかえりなさい",
+  "welcomeTitle": "Titaniumへようこそ\nログインして続行してください",
+  "emailHint": "メールアドレス",
+  "passwordHint": "パスワード",
+  "notification": "通知",
+  "roadmap": "ロードマップ",
+  "profile": "プロフィール",
+  "defaultErrorMessage": "エラーが発生しました。後でもう一度お試しください",
+  "noItemsFoundError": "項目が見つかりません",
+  "locationPermissionIsRequiredToContinue": "続行するには位置情報の許可が必要です"
+}

@@ -1,0 +1,29 @@
+{
+  "fieldRequired": "هذا الحقل مطلوب",
+  "invalidFieldValue": "قيمة حقل غير صالحة",
+  "validationEmail": "الرجاء إدخال بريد إلكتروني صالح",
+  "validationMaxLength": "الرجاء إكمال الطول المطلوب",
+  "validationPhoneNumber": "الرجاء إدخال رقم هاتف صالح",
+  "validationRequired": "هذا الحقل مطلوب",
+  "validationUrl": "الرجاء إدخال عنوان URL صالح",
+  "validatorEmail": "البريد الإلكتروني غير صحيح",
+  "validatorMaxLength": "رجاءً أدخل {n} أحرف على الأكثر",
+  "@validatorMaxLength": {
+    "placeholders": {
+      "n": {}
+    }
+  },
+  "validatorMinLength": "الرجاء إدخال {n} أحرف على الأقل",
+  "@validatorMinLength": {
+    "placeholders": {
+      "n": {}
+    }
+  },
+  "validatorPhoneNumber": "رقم الهاتف غير صحيح",
+  "validatorRequired": "هذا الحقل مطلوب",
+  "validatorUrl": "الرابط غير صحيح",
+  "validatorUseArabicOrKurdishLetters": "رجاءً أدخل حروف عربية أو كردية",
+  "validatorUseEnglishLetters": "رجاءً أدخل حروف إنجليزية",
+  "requiredRuleMessage": "هذا الحقل مطلوب",
+  "emailRuleMessage": "الرجاء إدخال بريد إلكتروني صالح"
+}

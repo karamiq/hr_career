@@ -1,0 +1,15 @@
+{
+    "sendRequest": "إرسال الطلب",
+    "sendRequestDescription": "يرجى ملء النموذج أدناه لإرسال طلبك. تأكد من تقديم جميع المعلومات المطلوبة.",
+    "record": "السجل",
+    "create": "إنشاء",
+    "pending": "قيد الانتظار",
+    "approved": "مقبول",
+    "rejected": "مرفوض",
+    "others": "أخرى",
+    "title": "العنوان",
+    "description": "الوصف",
+    "type": "النوع",
+    "uploadAttachment": "ارفع المرفق",
+    "submit": "إرسال"
+}

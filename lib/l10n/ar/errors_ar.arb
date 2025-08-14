@@ -1,0 +1,5 @@
+{
+  "defaultErrorMessage": "حدث خطأ ما, يرجى المحاولة مرة أخرى",
+  "noItemsFoundError": "لا يوجد عناصر",
+  "locationPermissionIsRequiredToContinue": "يجب السماح بالوصول إلى الموقع للمتابعة"
+}

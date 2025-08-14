@@ -1,0 +1,15 @@
+{
+    "login": "Login",
+    "loginSuccess": "Logged in successfully",
+    "password": "Password",
+    "typeYourPasswordHere": "Type your password here",
+    "typeYourUsenameHere": "Type your username here",
+    "username": "Username",
+    "welcomeAgain": "Welcome again",
+
+
+    "welcomeTitle": "Welcome to Titanium\nLogin to continue",
+    "emailHint": "Email",
+    "passwordHint": "Password",
+    "logout": "Logout"
+  }
