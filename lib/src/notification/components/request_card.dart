@@ -20,11 +20,11 @@ extension RequestStatusExtension on RequestStatus {
   Gradient get gradient {
     switch (this) {
       case RequestStatus.pending:
-        return ConstantColors.yellowVibrant;
+        return ConstantColors.yellowVibrant();
       case RequestStatus.approved:
-        return ConstantColors.greenVibrant;
+        return ConstantColors.greenVibrant();
       case RequestStatus.rejected:
-        return ConstantColors.redVibrant;
+        return ConstantColors.redVibrant();
     }
   }
 }
@@ -50,65 +50,62 @@ class RequestCard extends StatelessWidget {
     final textTheme = Theme.of(context).textTheme;
     final colorScheme = Theme.of(context).colorScheme;
 
-    return Card(
-      elevation: 0,
-      child: Container(
-        padding: EdgeInsets.symmetric(vertical: Insets.small, horizontal: Insets.medium),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(8),
-          color: colorScheme.surfaceContainerHighest,
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            // Header with title and status
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Expanded(
-                  child: Text(
-                    title,
-                    style: textTheme.headlineSmall?.copyWith(
-                      fontWeight: FontWeight.bold,
-                      color: colorScheme.secondary,
-                    ),
+    return Container(
+      padding: EdgeInsets.symmetric(vertical: Insets.small, horizontal: Insets.medium),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(8),
+        color: colorScheme.surfaceContainerHighest,
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Header with title and status
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Expanded(
+                child: Text(
+                  title,
+                  style: textTheme.headlineSmall?.copyWith(
+                    fontWeight: FontWeight.bold,
+                    color: colorScheme.secondary,
                   ),
                 ),
-                Container(
-                  width: 90,
-                  height: 34,
-                  alignment: Alignment.center,
-                  decoration: BoxDecoration(
-                    gradient: status.gradient,
-                    borderRadius: BorderSize.extraSmallRadius,
-                  ),
-                  child: Text(
-                    status.label,
-                    strutStyle: const StrutStyle(forceStrutHeight: true),
-                    style: textTheme.labelMedium?.copyWith(
-                      color: ConstantColors.white,
-                      fontWeight: FontWeight.bold,
-                    ),
+              ),
+              Container(
+                width: 90,
+                height: 34,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  gradient: status.gradient,
+                  borderRadius: BorderSize.extraSmallRadius,
+                ),
+                child: Text(
+                  status.label,
+                  strutStyle: const StrutStyle(forceStrutHeight: true),
+                  style: textTheme.labelMedium?.copyWith(
+                    color: ConstantColors.white,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
-              ],
-            ),
-            const SizedBox(height: Insets.medium),
-            // Category & Date row
-            Row(
-              children: [
-                GradientIcon(Assets.assetsSvgCategory),
-                const SizedBox(width: Insets.small),
-                Text(category, style: textTheme.bodyMedium?.copyWith(color: colorScheme.secondary)),
-                const Spacer(),
-                GradientIcon(calendarIconPath),
-                const SizedBox(width: Insets.small),
-                Text(dateTime, style: textTheme.bodyMedium?.copyWith(color: colorScheme.secondary)),
-              ],
-            ),
-          ],
-        ),
+              ),
+            ],
+          ),
+          const SizedBox(height: Insets.medium),
+          // Category & Date row
+          Row(
+            children: [
+              GradientIcon(Assets.assetsSvgCategory),
+              const SizedBox(width: Insets.small),
+              Text(category, style: textTheme.bodyMedium?.copyWith(color: colorScheme.secondary)),
+              const Spacer(),
+              GradientIcon(calendarIconPath),
+              const SizedBox(width: Insets.small),
+              Text(dateTime, style: textTheme.bodyMedium?.copyWith(color: colorScheme.secondary)),
+            ],
+          ),
+        ],
       ),
     );
   }

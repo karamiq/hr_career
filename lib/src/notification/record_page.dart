@@ -7,44 +7,33 @@ class RequestsHistoryPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: ColumnPadded(
-        gap: Insets.small,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            context.l10n.pending,
-            style: context.textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.bold),
-          ),
-          Column(
-            children: [
-              RequestCard(
+    return ColumnPadded(
+      gap: Insets.small,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          context.l10n.pending,
+          style: context.textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.bold),
+        ),
+        Expanded(
+          child: ListView.separated(
+            itemCount: 11,
+            itemBuilder: (context, index) {
+              if (index == 10) {
+                return Gap(navBarHeight);
+              }
+              return RequestCard(
                 title: 'Full-Stack Training',
                 category: 'Training',
                 dateTime: '2024-08-13 11:23 AM',
-                status: RequestStatus.pending,
+                status: index % 3 == 1 ? RequestStatus.approved : RequestStatus.rejected,
                 calendarIconPath: Assets.assetsSvgCalendar,
-              ),
-              RequestCard(
-                title: 'UI/UX Workshop',
-                category: 'Design',
-                dateTime: '2024-08-15 02:00 PM',
-                status: RequestStatus.approved,
-                calendarIconPath: Assets.assetsSvgCalendar,
-              ),
-              RequestCard(
-                title: 'Backend Seminar',
-                category: 'Development',
-                dateTime: '2024-08-20 09:00 AM',
-                status: RequestStatus.rejected,
-                calendarIconPath: Assets.assetsSvgCalendar,
-              ),
-            ],
+              );
+            },
+            separatorBuilder: (context, index) => const Gap(Insets.medium),
           ),
-
-          Gap(navBarHeight),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

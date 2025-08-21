@@ -8,13 +8,8 @@ abstract class AuthenticationModel with _$AuthenticationModel {
   const AuthenticationModel._();
 
   @jsonSerializable
-  const factory AuthenticationModel({
-    required int userID,
-    required String token,
-    @Default(null) String? accessToken,
-    required DateTime createdAt,
-    required DateTime expiresAt,
-  }) = _AuthenticationModel;
+  const factory AuthenticationModel({required int userID, required String refreshToken}) =
+      _AuthenticationModel;
 
   factory AuthenticationModel.fromJson(Map<String, dynamic> json) => _$AuthenticationModelFromJson(json);
 }

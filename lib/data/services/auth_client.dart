@@ -16,7 +16,7 @@ AuthClient authClient(Ref ref) => AuthClient(ref.authDio);
 abstract class AuthClient {
   factory AuthClient(Dio dio, {String baseUrl}) = _AuthClient;
 
-  @POST('/auth/login')
+  @POST('/auth')
   FutureDefaultResponse<AuthenticationModel> login(@Body() LoginRequestModel data);
 
   @GET('/auth')

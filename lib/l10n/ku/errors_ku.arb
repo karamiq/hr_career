@@ -1,0 +1,6 @@
+{
+    "@@locale": "ku",
+    "defaultErrorMessage": "هەڵەیەک ڕوویدا، تکایە دواتر هەوڵ بدەوە",
+    "noItemsFoundError": "هیچ شتێک نەدۆزرایەوە",
+    "locationPermissionIsRequiredToContinue": "مۆڵەتی شوێن پێویستە بۆ بەردەوامبوون"
+  }

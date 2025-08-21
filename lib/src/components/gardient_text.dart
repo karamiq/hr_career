@@ -10,13 +10,13 @@ class GradientText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Gradient effectiveGradient = gradient ?? ConstantColors.primaryGradient;
+    final Gradient effectiveGradient = gradient ?? ConstantColors.primaryGradient();
 
     return ShaderMask(
       shaderCallback: (bounds) {
         return effectiveGradient.createShader(Rect.fromLTWH(0, 0, bounds.width, bounds.height));
       },
-      child: Text(text, style: style?.copyWith(color: Colors.white)),
+      child: Text(text, style: style?.copyWith(color: ConstantColors.white)),
     );
   }
 }

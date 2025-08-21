@@ -1,0 +1,31 @@
+{
+    "@@locale": "ku",
+    "fieldRequired": "ئەم خانەیە پێویستە",
+    "invalidFieldValue": "نرخی خانە نادروستە",
+    "validationEmail": "تکایە ئیمەیڵێکی دروست بنووسە",
+    "validationMaxLength": "تکایە درێژیە پێویستەکە تەواو بکە",
+    "validationPhoneNumber": "تکایە ژمارە تەلەفۆنێکی دروست بنووسە",
+    "validationRequired": "ئەم خانەیە پێویستە",
+    "validationUrl": "تکایە URLێکی دروست بنووسە",
+    "validatorEmail": "ئەم خانەیە ئیمەیڵێکی دروست نییە",
+    "validatorMaxLength": "ئەم خانەیە دەبێت لە زۆر {n} پیت بێت",
+    "@validatorMaxLength": {
+      "placeholders": {
+        "n": {}
+      }
+    },
+    "validatorMinLength": "ئەم خانەیە دەبێت لەلایەنی کەمەوە {n} پیت بێت",
+    "@validatorMinLength": {
+      "placeholders": {
+        "n": {}
+      }
+    },
+    "validatorPhoneNumber": "ئەم خانەیە ژمارە تەلەفۆنێکی دروست نییە",
+    "validatorRequired": "ئەم خانەیە پێویستە",
+    "validatorUrl": "ئەم خانەیە ناونیشانێکی URLی دروست نییە",
+    "validatorUseArabicOrKurdishLetters": "تکایە پیتی عەرەبی یان کوردی بەکاربهێنە",
+    "validatorUseEnglishLetters": "تکایە پیتی ئینگلیزی بەکاربهێنە",
+    "requiredRuleMessage": "ئەم خانەیە پێویستە",
+  "emailRuleMessage": "تکایە ئیمەیڵێکی دروست بنووسە"
+  
+}

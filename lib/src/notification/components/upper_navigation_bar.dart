@@ -65,7 +65,7 @@ class _UpperNavigationBarState extends State<UpperNavigationBar> with TickerProv
           curve: Curves.easeInOutCubic,
 
           decoration: BoxDecoration(
-            gradient: isSelected ? ConstantColors.primaryGradient : null,
+            gradient: isSelected ? ConstantColors.primaryGradient() : null,
             borderRadius: BorderRadius.circular(16),
             boxShadow: isSelected
                 ? [

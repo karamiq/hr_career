@@ -1,0 +1,17 @@
+{
+    "@@locale": "ja",
+    "record": "記録",
+    "create": "作成",
+    "pending": "保留中",
+    "approved": "承認済み",
+    "rejected": "却下済み",
+    "others": "その他",
+    "title": "タイトル",
+    "description": "説明",
+    "type": "種類",
+    "uploadAttachment": "ファイルをアップロード",
+    "submit": "送信",
+    "sendRequest": "リクエスト送信",
+    "sendRequestDescription": "以下のフォームに記入してリクエストを送信してください。必要な情報をすべて入力してください。",
+    "browse": "参照"
+}

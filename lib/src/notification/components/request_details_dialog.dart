@@ -122,7 +122,11 @@ class RequestDetailsDialog extends StatelessWidget {
                       onTap: onApprove,
                       child: const Text(
                         'Approved',
-                        style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w500),
+                        style: TextStyle(
+                          color: ConstantColors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
                     ),
                   ),

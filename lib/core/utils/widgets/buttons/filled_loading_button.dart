@@ -21,7 +21,7 @@ class FilledLoadingButton extends StatelessWidget {
       decoration: BoxDecoration(
         color: isLoading ? Colors.grey : Theme.of(context).colorScheme.primary,
         borderRadius: BorderSize.extraSmallRadius,
-        gradient: isLoading ? null : ConstantColors.primaryGradient,
+        gradient: isLoading ? null : ConstantColors.primaryGradient(),
       ),
       child: FilledButton(
         style: FilledButton.styleFrom(

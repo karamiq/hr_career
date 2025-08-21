@@ -15,7 +15,7 @@ class CustomAppBar extends ConsumerWidget implements PreferredSizeWidget {
       child: AppBar(
         backgroundColor: Colors.transparent, // Make background transparent
         elevation: 0,
-        flexibleSpace: Container(decoration: BoxDecoration(gradient: ConstantColors.primaryGradient)),
+        flexibleSpace: Container(decoration: BoxDecoration(gradient: ConstantColors.primaryGradient())),
         title: Padding(
           padding: EdgeInsets.only(top: Insets.large),
           child: Text(

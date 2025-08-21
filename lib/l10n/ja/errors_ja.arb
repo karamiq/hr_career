@@ -1,0 +1,6 @@
+{
+    "@@locale": "ja",
+    "defaultErrorMessage": "エラーが発生しました。後でもう一度お試しください",
+    "noItemsFoundError": "アイテムが見つかりません",
+    "locationPermissionIsRequiredToContinue": "続行するには位置情報の許可が必要です"
+  }

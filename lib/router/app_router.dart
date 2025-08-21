@@ -5,6 +5,7 @@ import 'package:app/src/notification/record_page.dart';
 import 'package:app/src/notification/requests_page.dart';
 import 'package:app/src/profile/profile_page.dart';
 import 'package:app/src/roadmap/roadmap_page.dart';
+import 'package:app/src/skills/skills_page.dart';
 import 'package:app/src/auth/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -17,13 +18,16 @@ final GlobalKey<NavigatorState> _shellNavigatorKey = GlobalKey<NavigatorState>(d
 
 // GoRouter configuration
 final router = GoRouter(
-  initialLocation: RoutesDocument.roadmap,
+  initialLocation: RoutesDocument.profile,
   navigatorKey: _rootNavigatorKey,
-  redirect: (context, state) async {
-    return null;
-
-    // Your redirect logic here if needed
-  },
+  // redirect: (context, state) async {
+  //   final prefs = await SharedPreferences.getInstance();
+  //   final authentication = prefs.get(Preferences.authentication);
+  //   if (authentication == null) {
+  //     return RoutesDocument.login;
+  //   }
+  //   return null;
+  // },
   routes: [
     GoRoute(
       path: RoutesDocument.login,
@@ -41,6 +45,10 @@ final router = GoRouter(
         GoRoute(
           path: RoutesDocument.profile,
           pageBuilder: (context, state) => instanTransition(state, const ProfilePage()),
+        ),
+        GoRoute(
+          path: RoutesDocument.skills,
+          pageBuilder: (context, state) => instanTransition(state, const SkillsPage()),
         ),
         ShellRoute(
           pageBuilder: (context, state, child) => instanTransition(state, RequestsPage(child: child)),
@@ -67,6 +75,7 @@ class RoutesDocument {
 
   static const String roadmap = '/roadmap';
   static const String profile = '/profile';
+  static const String skills = '/skills';
 
   static const String requestsHistory = '/requests/history';
   static const String requestsFormPage = '/requests/form';

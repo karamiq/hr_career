@@ -88,9 +88,15 @@ class $AssetsSvgGen {
   /// File path: assets/svg/chat.svg
   SvgGenImage get chat => const SvgGenImage('assets/svg/chat.svg');
 
+  /// File path: assets/svg/check.svg
+  SvgGenImage get check => const SvgGenImage('assets/svg/check.svg');
+
   /// File path: assets/svg/cirtification.svg
   SvgGenImage get cirtification =>
       const SvgGenImage('assets/svg/cirtification.svg');
+
+  /// File path: assets/svg/clock.svg
+  SvgGenImage get clock => const SvgGenImage('assets/svg/clock.svg');
 
   /// File path: assets/svg/closed_eye.svg
   SvgGenImage get closedEye => const SvgGenImage('assets/svg/closed_eye.svg');
@@ -117,6 +123,9 @@ class $AssetsSvgGen {
   /// File path: assets/svg/password.svg
   SvgGenImage get password => const SvgGenImage('assets/svg/password.svg');
 
+  /// File path: assets/svg/person.svg
+  SvgGenImage get person => const SvgGenImage('assets/svg/person.svg');
+
   /// File path: assets/svg/profile.svg
   SvgGenImage get profile => const SvgGenImage('assets/svg/profile.svg');
 
@@ -128,6 +137,9 @@ class $AssetsSvgGen {
 
   /// File path: assets/svg/roadmap.svg
   SvgGenImage get roadmap => const SvgGenImage('assets/svg/roadmap.svg');
+
+  /// File path: assets/svg/rocket.svg
+  SvgGenImage get rocket => const SvgGenImage('assets/svg/rocket.svg');
 
   /// File path: assets/svg/rotate_left.svg
   SvgGenImage get rotateLeft => const SvgGenImage('assets/svg/rotate_left.svg');
@@ -149,6 +161,9 @@ class $AssetsSvgGen {
 
   /// File path: assets/svg/signout.svg
   SvgGenImage get signout => const SvgGenImage('assets/svg/signout.svg');
+
+  /// File path: assets/svg/skill.svg
+  SvgGenImage get skill => const SvgGenImage('assets/svg/skill.svg');
 
   /// File path: assets/svg/sun.svg
   SvgGenImage get sun => const SvgGenImage('assets/svg/sun.svg');
@@ -175,7 +190,9 @@ class $AssetsSvgGen {
     cart,
     category,
     chat,
+    check,
     cirtification,
+    clock,
     closedEye,
     document,
     eye,
@@ -184,16 +201,19 @@ class $AssetsSvgGen {
     moon,
     notificationsEmpty,
     password,
+    person,
     profile,
     reload,
     request,
     roadmap,
+    rocket,
     rotateLeft,
     rotateRight,
     search01,
     sendArrowLeft,
     sendArrowRight,
     signout,
+    skill,
     sun,
     titaniumLogoDark,
     titaniumLogoLight,

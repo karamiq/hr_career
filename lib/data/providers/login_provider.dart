@@ -14,6 +14,7 @@ class Login extends _$Login with AsyncXNotifierMixin<AuthenticationModel> {
 
   @useResult
   RunXCallback<AuthenticationModel> run(LoginRequestModel body) => handle(() async {
+    print(body.toJson());
     final result = await ref.read(authClientProvider).login(body).data;
     await ref.read(authenticationProvider.notifier).update((state) => result.data);
     return result.data;

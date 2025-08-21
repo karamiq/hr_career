@@ -10,30 +10,41 @@ class ChangeLanguageButton extends HookConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final settings = ref.watch(settingsProvider);
     final appColors = ref.watch(appColorsProvider);
-    final style = TextStyle(color: appColors.foreGround, fontSize: 16, fontWeight: FontWeight.w500);
-    return DropdownButton(
-      value: settings.localeCode,
-      onChanged: (value) {
-        if (value != null) {
-          ref.read(settingsProvider.notifier).setLocale(Locale(value));
-        }
-      },
-      items: [
-        DropdownMenuItem(
-          value: 'en',
-          child: Text(" English ", style: style),
-        ),
-        DropdownMenuItem(
-          value: 'ar',
-          child: Text(" العربية ", style: style),
-        ),
-        DropdownMenuItem(
-          value: 'ja',
-          child: Text("日本語", style: style),
-        ),
-      ],
-      icon: GradientIcon(Icons.language_outlined),
-      underline: const SizedBox(),
+    final style = TextStyle(color: appColors.text, fontSize: 16, fontWeight: FontWeight.w500);
+    return SizedBox(
+      height: 28,
+      child: DropdownButton(
+        value: settings.localeCode,
+        onChanged: (value) {
+          if (value != null) {
+            ref.read(settingsProvider.notifier).setLocale(Locale(value));
+          }
+        },
+        items: [
+          DropdownMenuItem(
+            value: 'en',
+            child: Text(
+              " English ",
+              textHeightBehavior: TextHeightBehavior(applyHeightToLastDescent: false),
+              style: style,
+            ),
+          ),
+          DropdownMenuItem(
+            value: 'ar',
+            child: Text(" العربية ", style: style),
+          ),
+          DropdownMenuItem(
+            value: 'ja',
+            child: Text("日本語", style: style),
+          ),
+          DropdownMenuItem(
+            value: 'ku',
+            child: Text("كوردي", style: style),
+          ),
+        ],
+        icon: GradientIcon(Icons.language_outlined),
+        underline: const SizedBox.shrink(),
+      ),
     );
   }
 }

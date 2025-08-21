@@ -7,6 +7,13 @@ import 'package:image_picker/image_picker.dart';
 import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
+Future<Size> getWidgetSize(GlobalKey key) async {
+  // Wait until the next frame to ensure widget is rendered
+  await Future.delayed(Duration.zero);
+  final RenderBox renderBox = key.currentContext!.findRenderObject() as RenderBox;
+  return renderBox.size;
+}
+
 Future<void> fetchPage<T>({
   int? pageKey,
   required PagingController<int, T> pagingController,

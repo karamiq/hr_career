@@ -9,7 +9,7 @@ class FadingGardientDivider extends StatelessWidget {
     return Container(
       height: 1,
       width: double.infinity,
-      decoration: BoxDecoration(gradient: ConstantColors.primaryGradient),
+      decoration: BoxDecoration(gradient: ConstantColors.primaryGradient()),
     );
   }
 }

@@ -1,0 +1,16 @@
+{
+    "@@locale": "ja",
+    "login": "ログイン",
+    "loginSuccess": "正常にログインしました",
+    "password": "パスワード",
+    "typeYourPasswordHere": "パスワードを入力してください",
+    "typeYourUsenameHere": "ユーザー名を入力してください",
+    "username": "ユーザー名",
+    "welcomeAgain": "お帰りなさい",
+
+
+    "welcomeTitle": "Titaniumへようこそ\nログインして続行",
+    "emailHint": "メールアドレス",
+    "passwordHint": "パスワード",
+    "logout": "ログアウト"
+  }

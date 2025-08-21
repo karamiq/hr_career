@@ -22,8 +22,10 @@ class LoginPage extends ConsumerStatefulWidget {
 
 class _LoginPageState extends ConsumerState<LoginPage> {
   final _formKey = GlobalKey<FormState>();
-  final _emailController = TextEditingController(text: 'test@gmail.com');
-  final _passwordController = TextEditingController(text: 'P@ssword12345');
+  // thedarksoul622@gmail.com
+  // \$TR!NG12345
+  final _emailController = TextEditingController(text: "karamrasheed@gmail.com");
+  final _passwordController = TextEditingController(text: 'Karam@2004');
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +46,7 @@ class _LoginPageState extends ConsumerState<LoginPage> {
               SizedBox(height: MediaQuery.of(context).size.height * 0.05),
               Image.asset(
                 isDark ? 'assets/images/titanium_logo_dark.png' : 'assets/images/titanium_logo_light.png',
-                height: 160,
+                height: 200,
               ),
               const SizedBox(height: Insets.medium),
               Text(
@@ -54,12 +56,14 @@ class _LoginPageState extends ConsumerState<LoginPage> {
               ),
               const SizedBox(height: 8),
               AuthFormField(
+                textDirection: TextDirection.ltr,
                 controller: _emailController,
                 hintText: l10n.emailHint,
                 rules: [EmailRule(l10n.emailRuleMessage)],
               ),
               const SizedBox(height: 12),
               PasswordFormField(
+                textDirection: TextDirection.ltr,
                 controller: _passwordController,
                 hintText: l10n.passwordHint,
                 rules: [RequiredRule(l10n.requiredRuleMessage)],

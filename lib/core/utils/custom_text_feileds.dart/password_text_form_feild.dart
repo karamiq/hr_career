@@ -30,8 +30,9 @@ class PasswordFormField extends ConsumerWidget {
     this.textCapitalization = TextCapitalization.none,
     this.autovalidateMode,
     this.decoration,
+    this.textDirection,
   });
-
+  final TextDirection? textDirection;
   final List<ValidatorRule> rules;
   final TextEditingController? controller;
   final String? hintText;
@@ -77,6 +78,7 @@ class PasswordFormField extends ConsumerWidget {
         );
 
         return TextFormField(
+          textDirection: textDirection,
           controller: controller,
           focusNode: focusNode,
 

@@ -13,7 +13,7 @@ class ProfileHeader extends StatelessWidget {
       alignment: Alignment.center,
 
       decoration: BoxDecoration(
-        gradient: ConstantColors.primaryGradient,
+        gradient: ConstantColors.primaryGradient(),
         borderRadius: const BorderRadius.only(
           bottomLeft: Radius.circular(28),
           bottomRight: Radius.circular(28),
@@ -30,8 +30,8 @@ class ProfileHeader extends StatelessWidget {
               padding: const EdgeInsets.all(Insets.extraSmall),
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                gradient: ConstantColors.primaryGradient,
-                border: Border.all(color: Colors.white, width: 4),
+                gradient: ConstantColors.primaryGradient(),
+                border: Border.all(color: ConstantColors.white, width: 4),
               ),
               child: const CircleAvatar(
                 backgroundColor: Colors.transparent,

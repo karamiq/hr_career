@@ -1,0 +1,16 @@
+{
+    "@@locale": "ku",
+    "login": "چوونەژوورەوە",
+    "loginSuccess": "بە سەرکەوتوویی چوویتە ژوورەوە",
+    "password": "وشەی تێپەڕ",
+    "typeYourPasswordHere": "وشەی تێپەڕەکەت لێرە بنووسە",
+    "typeYourUsenameHere": "ناوی بەکارهێنەرەکەت لێرە بنووسە",
+    "username": "ناوی بەکارهێنەر",
+    "welcomeAgain": "دووبارە بەخێربێیت",
+
+
+    "welcomeTitle": "بەخێربێیت بۆ Titanium\nچوونەژوورەوە بۆ بەردەوامبوون",
+    "emailHint": "ئیمەیڵ",
+    "passwordHint": "وشەی تێپەڕ",
+    "logout": "چوونەدەرەوە"
+  }

@@ -1,93 +1,93 @@
-import 'package:app/common_lib.dart';
+import 'package:app/core/network/dio_models.dart';
+import 'package:app/src/roadmap/widgets/custom_sliver_app_bar.dart';
+import 'widgets/certification_card.dart';
 import 'package:flutter/material.dart';
 
-class RoadmapPage extends ConsumerWidget {
+class RoadmapPage extends StatefulWidget {
   const RoadmapPage({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    return Scaffold(
-      body: RowPadded(
-        crossAxisAlignment: CrossAxisAlignment.end,
-        mainAxisAlignment: MainAxisAlignment.center,
-
-        children: [
-          Column(
-            mainAxisAlignment: MainAxisAlignment.end,
-
-            children: List.generate(11, (index) {
-              return Container(
-                height: 15,
-                width: 15,
-                margin: const EdgeInsets.symmetric(vertical: 10),
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  color: context.colorScheme.onPrimary,
-                  borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: context.colorScheme.primary, width: 1),
-                ),
-              );
-            }),
-          ),
-          const Gap(Insets.medium),
-          CertificationCard(),
-        ],
-      ).withPadding(EdgeInsetsGeometry.only(bottom: Insets.extraLarge * 5)),
-    );
-  }
+  State<RoadmapPage> createState() => _RoadmapPageState();
 }
 
-class CertificationCard extends StatelessWidget {
-  const CertificationCard({super.key});
+class _RoadmapPageState extends State<RoadmapPage> {
+  final List<CertificationStep> _certSteps = [
+    CertificationStep(
+      title: 'CCNA (Cisco Certified Network Associate)',
+      description:
+          'Foundation-level networking certification covering essential network fundamentals and practical skills',
+      percent: 1,
+      isDone: true,
+    ),
+    CertificationStep(
+      title: 'CCNP Enterprise (Cisco Certified Network Professional)',
+      description: 'Professional-level enterprise networking certification for experienced network engineers',
+      percent: 1.0,
+      isDone: true,
+    ),
+    CertificationStep(
+      title: 'CCIE Enterprise Infrastructure (Expert Level)',
+      description:
+          'Elite expert-level certification demonstrating mastery of complex enterprise networking solutions',
+      percent: 0.5,
+      isDone: false,
+    ),
+    CertificationStep(
+      title: 'CCNA (Cisco Certified Network Associate)',
+      description:
+          'Foundation-level networking certification covering essential network fundamentals and practical skills',
+      percent: 1,
+      isDone: true,
+    ),
+    CertificationStep(
+      title: 'CCNP Enterprise (Cisco Certified Network Professional)',
+      description: 'Professional-level enterprise networking certification for experienced network engineers',
+      percent: 1.0,
+      isDone: true,
+    ),
+
+    CertificationStep(
+      title: 'CCIE Enterprise Infrastructure (Expert Level)',
+      description:
+          'Elite expert-level certification demonstrating mastery of complex enterprise networking solutions',
+      percent: 0.5,
+      isDone: false,
+    ),
+  ];
+
+  int? _expandedIndex;
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = context.colorScheme;
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Container(
-          height: 100,
-
-          width: 300,
-          alignment: Alignment.center,
-          decoration: BoxDecoration(
-            color: colorScheme.primary,
-            borderRadius: BorderRadius.circular(10),
-            border: Border.all(color: colorScheme.onPrimary, width: 6),
-          ),
-          child: Text(
-            'Cisco certification national association (CCNA) ',
-            textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 24, color: colorScheme.onPrimary, fontWeight: FontWeight.bold),
-          ),
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: List.generate(10, (index) {
-            return Container(
-              height: 20,
-              width: 8,
-              margin: const EdgeInsets.symmetric(horizontal: 10),
-              decoration: BoxDecoration(color: colorScheme.onPrimary),
-            );
-          }),
-        ),
-        Container(
-          width: 300,
-          height: 200,
-          decoration: BoxDecoration(
-            color: colorScheme.onPrimary,
-            borderRadius: BorderRadius.circular(10),
-            image: const DecorationImage(
-              image: NetworkImage(
-                'https://media.licdn.com/dms/image/v2/C4D22AQEAsX7QOK93pQ/feedshare-shrink_800/feedshare-shrink_800/0/1677540332504?e=2147483647&v=beta&t=qURVcxyBNpmtHsuduVbPO8DRyreMpdn68wFUW3haMME',
-              ),
-              fit: BoxFit.cover,
+    final colorScheme = Theme.of(context).colorScheme;
+    return Scaffold(
+      backgroundColor: colorScheme.background,
+      body: CustomScrollView(
+        slivers: [
+          CustomSliverAppBar(),
+          SliverPadding(
+            padding: EdgeInsets.all(Insets.small),
+            sliver: SliverList(
+              delegate: SliverChildListDelegate([
+                SizedBox(height: Insets.extraLarge),
+                ...List.generate(_certSteps.length, (index) {
+                  final step = _certSteps[index];
+                  final isLast = index == _certSteps.length - 1;
+                  return GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        _expandedIndex = _expandedIndex == index ? null : index;
+                      });
+                    },
+                    child: CertificationCard(step: step, isLast: isLast),
+                  );
+                }),
+                Gap(navBarHeight),
+              ]),
             ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

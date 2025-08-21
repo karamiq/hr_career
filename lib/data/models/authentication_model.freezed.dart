@@ -15,7 +15,7 @@ T _$identity<T>(T value) => value;
 /// @nodoc
 mixin _$AuthenticationModel {
 
- int get userID; String get token; String? get accessToken; DateTime get createdAt; DateTime get expiresAt;
+ int get userID; String get refreshToken;
 /// Create a copy of AuthenticationModel
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
@@ -28,16 +28,16 @@ $AuthenticationModelCopyWith<AuthenticationModel> get copyWith => _$Authenticati
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is AuthenticationModel&&(identical(other.userID, userID) || other.userID == userID)&&(identical(other.token, token) || other.token == token)&&(identical(other.accessToken, accessToken) || other.accessToken == accessToken)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt)&&(identical(other.expiresAt, expiresAt) || other.expiresAt == expiresAt));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is AuthenticationModel&&(identical(other.userID, userID) || other.userID == userID)&&(identical(other.refreshToken, refreshToken) || other.refreshToken == refreshToken));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,userID,token,accessToken,createdAt,expiresAt);
+int get hashCode => Object.hash(runtimeType,userID,refreshToken);
 
 @override
 String toString() {
-  return 'AuthenticationModel(userID: $userID, token: $token, accessToken: $accessToken, createdAt: $createdAt, expiresAt: $expiresAt)';
+  return 'AuthenticationModel(userID: $userID, refreshToken: $refreshToken)';
 }
 
 
@@ -48,7 +48,7 @@ abstract mixin class $AuthenticationModelCopyWith<$Res>  {
   factory $AuthenticationModelCopyWith(AuthenticationModel value, $Res Function(AuthenticationModel) _then) = _$AuthenticationModelCopyWithImpl;
 @useResult
 $Res call({
- int userID, String token, String? accessToken, DateTime createdAt, DateTime expiresAt
+ int userID, String refreshToken
 });
 
 
@@ -65,14 +65,11 @@ class _$AuthenticationModelCopyWithImpl<$Res>
 
 /// Create a copy of AuthenticationModel
 /// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? userID = null,Object? token = null,Object? accessToken = freezed,Object? createdAt = null,Object? expiresAt = null,}) {
+@pragma('vm:prefer-inline') @override $Res call({Object? userID = null,Object? refreshToken = null,}) {
   return _then(_self.copyWith(
 userID: null == userID ? _self.userID : userID // ignore: cast_nullable_to_non_nullable
-as int,token: null == token ? _self.token : token // ignore: cast_nullable_to_non_nullable
-as String,accessToken: freezed == accessToken ? _self.accessToken : accessToken // ignore: cast_nullable_to_non_nullable
-as String?,createdAt: null == createdAt ? _self.createdAt : createdAt // ignore: cast_nullable_to_non_nullable
-as DateTime,expiresAt: null == expiresAt ? _self.expiresAt : expiresAt // ignore: cast_nullable_to_non_nullable
-as DateTime,
+as int,refreshToken: null == refreshToken ? _self.refreshToken : refreshToken // ignore: cast_nullable_to_non_nullable
+as String,
   ));
 }
 
@@ -157,10 +154,10 @@ return $default(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int userID,  String token,  String? accessToken,  DateTime createdAt,  DateTime expiresAt)?  $default,{required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int userID,  String refreshToken)?  $default,{required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case _AuthenticationModel() when $default != null:
-return $default(_that.userID,_that.token,_that.accessToken,_that.createdAt,_that.expiresAt);case _:
+return $default(_that.userID,_that.refreshToken);case _:
   return orElse();
 
 }
@@ -178,10 +175,10 @@ return $default(_that.userID,_that.token,_that.accessToken,_that.createdAt,_that
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int userID,  String token,  String? accessToken,  DateTime createdAt,  DateTime expiresAt)  $default,) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int userID,  String refreshToken)  $default,) {final _that = this;
 switch (_that) {
 case _AuthenticationModel():
-return $default(_that.userID,_that.token,_that.accessToken,_that.createdAt,_that.expiresAt);case _:
+return $default(_that.userID,_that.refreshToken);case _:
   throw StateError('Unexpected subclass');
 
 }
@@ -198,10 +195,10 @@ return $default(_that.userID,_that.token,_that.accessToken,_that.createdAt,_that
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int userID,  String token,  String? accessToken,  DateTime createdAt,  DateTime expiresAt)?  $default,) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int userID,  String refreshToken)?  $default,) {final _that = this;
 switch (_that) {
 case _AuthenticationModel() when $default != null:
-return $default(_that.userID,_that.token,_that.accessToken,_that.createdAt,_that.expiresAt);case _:
+return $default(_that.userID,_that.refreshToken);case _:
   return null;
 
 }
@@ -213,14 +210,11 @@ return $default(_that.userID,_that.token,_that.accessToken,_that.createdAt,_that
 
 @jsonSerializable
 class _AuthenticationModel extends AuthenticationModel {
-  const _AuthenticationModel({required this.userID, required this.token, this.accessToken = null, required this.createdAt, required this.expiresAt}): super._();
+  const _AuthenticationModel({required this.userID, required this.refreshToken}): super._();
   factory _AuthenticationModel.fromJson(Map<String, dynamic> json) => _$AuthenticationModelFromJson(json);
 
 @override final  int userID;
-@override final  String token;
-@override@JsonKey() final  String? accessToken;
-@override final  DateTime createdAt;
-@override final  DateTime expiresAt;
+@override final  String refreshToken;
 
 /// Create a copy of AuthenticationModel
 /// with the given fields replaced by the non-null parameter values.
@@ -235,16 +229,16 @@ Map<String, dynamic> toJson() {
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _AuthenticationModel&&(identical(other.userID, userID) || other.userID == userID)&&(identical(other.token, token) || other.token == token)&&(identical(other.accessToken, accessToken) || other.accessToken == accessToken)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt)&&(identical(other.expiresAt, expiresAt) || other.expiresAt == expiresAt));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _AuthenticationModel&&(identical(other.userID, userID) || other.userID == userID)&&(identical(other.refreshToken, refreshToken) || other.refreshToken == refreshToken));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,userID,token,accessToken,createdAt,expiresAt);
+int get hashCode => Object.hash(runtimeType,userID,refreshToken);
 
 @override
 String toString() {
-  return 'AuthenticationModel(userID: $userID, token: $token, accessToken: $accessToken, createdAt: $createdAt, expiresAt: $expiresAt)';
+  return 'AuthenticationModel(userID: $userID, refreshToken: $refreshToken)';
 }
 
 
@@ -255,7 +249,7 @@ abstract mixin class _$AuthenticationModelCopyWith<$Res> implements $Authenticat
   factory _$AuthenticationModelCopyWith(_AuthenticationModel value, $Res Function(_AuthenticationModel) _then) = __$AuthenticationModelCopyWithImpl;
 @override @useResult
 $Res call({
- int userID, String token, String? accessToken, DateTime createdAt, DateTime expiresAt
+ int userID, String refreshToken
 });
 
 
@@ -272,14 +266,11 @@ class __$AuthenticationModelCopyWithImpl<$Res>
 
 /// Create a copy of AuthenticationModel
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? userID = null,Object? token = null,Object? accessToken = freezed,Object? createdAt = null,Object? expiresAt = null,}) {
+@override @pragma('vm:prefer-inline') $Res call({Object? userID = null,Object? refreshToken = null,}) {
   return _then(_AuthenticationModel(
 userID: null == userID ? _self.userID : userID // ignore: cast_nullable_to_non_nullable
-as int,token: null == token ? _self.token : token // ignore: cast_nullable_to_non_nullable
-as String,accessToken: freezed == accessToken ? _self.accessToken : accessToken // ignore: cast_nullable_to_non_nullable
-as String?,createdAt: null == createdAt ? _self.createdAt : createdAt // ignore: cast_nullable_to_non_nullable
-as DateTime,expiresAt: null == expiresAt ? _self.expiresAt : expiresAt // ignore: cast_nullable_to_non_nullable
-as DateTime,
+as int,refreshToken: null == refreshToken ? _self.refreshToken : refreshToken // ignore: cast_nullable_to_non_nullable
+as String,
   ));
 }
 

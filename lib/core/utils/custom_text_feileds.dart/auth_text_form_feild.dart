@@ -29,8 +29,9 @@ class AuthFormField extends ConsumerWidget {
     this.decoration,
     this.readOnly = false,
     this.onTap,
+    this.textDirection,
   });
-
+  final TextDirection? textDirection;
   final List<ValidatorRule> rules;
   final bool readOnly;
   final void Function()? onTap;
@@ -69,6 +70,7 @@ class AuthFormField extends ConsumerWidget {
     );
 
     return TextFormField(
+      textDirection: textDirection,
       autofillHints: const [AutofillHints.telephoneNumber],
       readOnly: readOnly,
       onTap: onTap,

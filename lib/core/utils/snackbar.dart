@@ -1,6 +1,5 @@
 import 'package:app/common_lib.dart';
 import 'package:app/core/theme/app_theme.dart';
-import 'package:app/core/utils/extensions.dart';
 import 'package:flutter/material.dart';
 
 class Utils {

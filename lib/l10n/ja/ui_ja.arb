@@ -1,0 +1,10 @@
+{
+    "@@locale": "ja",
+    "cancel": "キャンセル",
+    "crop": "クロップ",
+    "select": "選択",
+    "pickDate": "日付選択",
+    "relocate": "移動",
+    "retry": "再試行",
+    "search": "検索"
+  }

@@ -1,4 +1,5 @@
 import 'package:app/core/network/dio_models.dart';
+import 'package:app/core/theme/constant_colors.dart';
 import 'package:flutter/material.dart';
 
 class ThemeSwitch extends StatefulWidget {
@@ -42,7 +43,7 @@ class _ThemeSwitchState extends State<ThemeSwitch> with SingleTickerProviderStat
             height: 18,
             decoration: const BoxDecoration(
               shape: BoxShape.circle,
-              color: Colors.white,
+              color: ConstantColors.white,
               boxShadow: [BoxShadow(color: Colors.black26, offset: Offset(0, 2), blurRadius: 4)],
             ),
           ).withPadding(Insets.extraSmallAll),

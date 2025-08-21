@@ -10,7 +10,8 @@ class RefreshTokenInterceptor extends Interceptor {
     final isSignedIn = authentication.isSignedIn();
     final refreshtoken = authentication.build();
     if (isSignedIn) {
-      options.headers["Cookie"] = "RefreshToken=${refreshtoken?.token};UserID=${refreshtoken?.userID}";
+      options.headers["X-Refresh-Token"] = refreshtoken?.refreshToken;
+      options.headers["X-User-ID"] = refreshtoken?.userID.toString();
     }
     super.onRequest(options, handler);
   }

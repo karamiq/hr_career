@@ -29,5 +29,5 @@ class Authentication extends _$Authentication with NullableObjectPreferenceProvi
     ref.read(routerProvider).go(RoutesDocument.login);
   }
 
-  bool isSignedIn() => build()?.token != null;
+  bool isSignedIn() => build()?.refreshToken != null;
 }

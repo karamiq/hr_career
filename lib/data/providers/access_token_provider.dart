@@ -33,7 +33,6 @@ class AccessToken extends _$AccessToken {
 
   Future<String> newToken() async {
     final token = await ref.read(authClientProvider).accessToken();
-
     if (token.response.statusCode == 401) {
       ref.read(authenticationProvider.notifier).logout();
     }

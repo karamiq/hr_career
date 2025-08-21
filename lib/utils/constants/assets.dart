@@ -34,6 +34,10 @@ class Assets {
   /// assets/svg/about.svg
   static const String assetsSvgAbout = "assets/svg/about.svg";
 
+  /// Assets for assetsSvgAverage
+  /// assets/svg/average.svg
+  static const String assetsSvgAverage = "assets/svg/average.svg";
+
   /// Assets for assetsSvgCalendar
   /// assets/svg/calendar.svg
   static const String assetsSvgCalendar = "assets/svg/calendar.svg";
@@ -54,9 +58,17 @@ class Assets {
   /// assets/svg/chat.svg
   static const String assetsSvgChat = "assets/svg/chat.svg";
 
+  /// Assets for assetsSvgCheck
+  /// assets/svg/check.svg
+  static const String assetsSvgCheck = "assets/svg/check.svg";
+
   /// Assets for assetsSvgCirtification
   /// assets/svg/cirtification.svg
   static const String assetsSvgCirtification = "assets/svg/cirtification.svg";
+
+  /// Assets for assetsSvgClock
+  /// assets/svg/clock.svg
+  static const String assetsSvgClock = "assets/svg/clock.svg";
 
   /// Assets for assetsSvgClosedEye
   /// assets/svg/closed_eye.svg
@@ -90,6 +102,10 @@ class Assets {
   /// assets/svg/password.svg
   static const String assetsSvgPassword = "assets/svg/password.svg";
 
+  /// Assets for assetsSvgPerson
+  /// assets/svg/person.svg
+  static const String assetsSvgPerson = "assets/svg/person.svg";
+
   /// Assets for assetsSvgProfile
   /// assets/svg/profile.svg
   static const String assetsSvgProfile = "assets/svg/profile.svg";
@@ -105,6 +121,10 @@ class Assets {
   /// Assets for assetsSvgRoadmap
   /// assets/svg/roadmap.svg
   static const String assetsSvgRoadmap = "assets/svg/roadmap.svg";
+
+  /// Assets for assetsSvgRocket
+  /// assets/svg/rocket.svg
+  static const String assetsSvgRocket = "assets/svg/rocket.svg";
 
   /// Assets for assetsSvgRotateLeft
   /// assets/svg/rotate_left.svg
@@ -133,6 +153,18 @@ class Assets {
   /// Assets for assetsSvgSkill
   /// assets/svg/skill.svg
   static const String assetsSvgSkill = "assets/svg/skill.svg";
+
+  /// Assets for assetsSvgSkills
+  /// assets/svg/skills.svg
+  static const String assetsSvgSkills = "assets/svg/skills.svg";
+
+  /// Assets for assetsSvgStatistics
+  /// assets/svg/statistics.svg
+  static const String assetsSvgStatistics = "assets/svg/statistics.svg";
+
+  /// Assets for assetsSvgStupidIcon
+  /// assets/svg/stupid_icon.svg
+  static const String assetsSvgStupidIcon = "assets/svg/stupid_icon.svg";
 
   /// Assets for assetsSvgSun
   /// assets/svg/sun.svg

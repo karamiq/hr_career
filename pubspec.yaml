@@ -164,6 +164,8 @@ arb_directories:
   locales:
     - en
     - ar
+    - ja
+    - ku
 
 
 flutter_assets:

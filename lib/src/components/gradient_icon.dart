@@ -14,14 +14,15 @@ class GradientIcon extends StatelessWidget {
       return ShaderMask(
         blendMode: BlendMode.srcIn,
         shaderCallback: (bounds) =>
-            ConstantColors.primaryGradient.createShader(Rect.fromLTWH(0, 0, bounds.width, bounds.height)),
+            ConstantColors.primaryGradient().createShader(Rect.fromLTWH(0, 0, bounds.width, bounds.height)),
         child: Icon(size: size ?? 24, icon),
       );
     }
+
     return ShaderMask(
       blendMode: BlendMode.srcIn,
       shaderCallback: (bounds) =>
-          ConstantColors.primaryGradient.createShader(Rect.fromLTWH(0, 0, bounds.width, bounds.height)),
+          ConstantColors.primaryGradient().createShader(Rect.fromLTWH(0, 0, bounds.width, bounds.height)),
       child: SvgPicture.asset(icon, fit: BoxFit.contain, height: size, width: size),
     );
   }

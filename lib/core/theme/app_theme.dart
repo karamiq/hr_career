@@ -1,81 +1,14 @@
+export 'app_colors.dart';
+export 'constant_colors.dart';
 import 'package:app/common_lib.dart';
 import 'package:app/core/providers/settings_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-
 import 'extra_colors.dart';
+import 'constant_colors.dart';
+import 'app_colors.dart';
 part 'app_theme.g.dart';
-
-class ConstantColors {
-  static const primary = Color(0xFFF89C1C);
-
-  static const white = Color(0xFFFFFFFF);
-  static const black = Color(0x00000000);
-
-  static const red = Color(0xFFB83B40);
-
-  static const yellow = Color(0xFFF3B702);
-  static const green = Color(0xFF4CAF50);
-
-  static LinearGradient primaryGradient = LinearGradient(
-    colors: [Color(0xFFFBBF61), Color(0xFFD88627)],
-    begin: Alignment.centerLeft,
-    end: Alignment.centerRight,
-  );
-
-  static const redVibrant = LinearGradient(
-    colors: [Color(0xFFE57373), Color(0xFFEF5350)],
-    begin: Alignment.centerLeft,
-    end: Alignment.centerRight,
-  );
-  static const blueVibrant = LinearGradient(
-    colors: [Color(0xFF42A5F5), Color(0xFF2196F3)],
-    begin: Alignment.centerLeft,
-    end: Alignment.centerRight,
-  );
-  static const greenVibrant = LinearGradient(
-    colors: [Color(0xFF66BB6A), Color(0xFF43A047)],
-    begin: Alignment.centerLeft,
-    end: Alignment.centerRight,
-  );
-  static const purpleVibrant = LinearGradient(
-    colors: [Color(0xFFAB47BC), Color(0xFF8E24AA)],
-    begin: Alignment.centerLeft,
-    end: Alignment.centerRight,
-  );
-  static const yellowVibrant = LinearGradient(
-    colors: [Color(0xFFFFDC71), Color(0xFFFFAB00)],
-    begin: Alignment.centerLeft,
-    end: Alignment.centerRight,
-  );
-}
-
-class AppColors {
-  Brightness brightness = Brightness.light; // Default brightness, can be changed later
-  late final Color secondary;
-  late final Color text;
-  late final Color background;
-  late final Color foreGround;
-  final ConstantColors constantColors = ConstantColors();
-
-  AppColors(this.brightness) {
-    final isLight = brightness == Brightness.light;
-    if (isLight) {
-      secondary = const Color(0xFF4E4E4E);
-      text = Color(0xFF000000);
-      background = Color(0xFFEFEFEF);
-      foreGround = Color(0xFFFFFFFF);
-    } else {
-      secondary = const Color(0xFFD9D9D9);
-      text = Color(0xFFFFFFFF);
-      background = Color(0xFF676767);
-      foreGround = Color(0xFF4D4D4D);
-    }
-  }
-
-  final Color primary = ConstantColors.primary;
-}
 
 class AppTheme {
   ThemeData _build(Brightness brightness) {
@@ -243,7 +176,7 @@ class AppTheme {
   ExtraColors buildExtraColors() {
     return const ExtraColors(
       success: Color.fromARGB(255, 28, 101, 30),
-      onSuccess: Colors.white,
+      onSuccess: ConstantColors.white,
       error: Color.fromARGB(255, 255, 0, 0),
     );
   }

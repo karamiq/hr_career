@@ -13,12 +13,11 @@ class GradientButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return DecoratedBox(
       decoration: BoxDecoration(
-        gradient: gradient ?? ConstantColors.primaryGradient,
+        gradient: gradient ?? ConstantColors.primaryGradient(),
         borderRadius: BorderSize.extraSmallRadius,
       ),
       child: FilledButton(
         style: FilledButton.styleFrom(
-          minimumSize: const Size(double.infinity, 50),
           backgroundColor: Colors.transparent,
           shadowColor: Colors.transparent,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(500)),

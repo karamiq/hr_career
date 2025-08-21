@@ -80,6 +80,7 @@
   "about": "About",
   "support": "Support",
   "english": "English",
+  "areYouSureLogout": "Are you sure you want to log out?",
   "defaultErrorMessage": "An error occurred, please try again later",
   "noItemsFoundError": "No items found",
   "locationPermissionIsRequiredToContinue": "Location permission is required to continue"

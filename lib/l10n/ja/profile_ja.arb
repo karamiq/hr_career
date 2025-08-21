@@ -1,0 +1,12 @@
+{
+    "@@locale": "ja",
+    "accountDetails": "アカウント詳細",
+    "changePassword": "パスワード変更",
+    "documents": "書類",
+    "certifications": "資格証明書",
+    "skills": "スキル",
+    "about": "について",
+    "support": "サポート",
+    "english": "英語",
+    "areYouSureLogout": "本当にログアウトしますか？"
+  }
