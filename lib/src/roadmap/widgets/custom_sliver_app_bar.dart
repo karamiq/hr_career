@@ -20,9 +20,9 @@ class CustomSliverAppBar extends StatelessWidget {
       actionsPadding: Insets.noneAll,
       titleSpacing: Insets.sm - Insets.extraSmall,
       title: PositionCard(
-        icon: Assets.assetsSvgPerson,
-        title: 'Current position',
-        subtitle: 'Junior Network Engineer',
+        icon: Assets.assetsSvgRocket,
+        title: context.l10n.targetPosition, // localized
+        subtitle: 'Senior Network Engineer', // keep as parameter
         iconColor: colorScheme.onPrimary,
       ),
       // backgroundColor: Colors.transparent,
@@ -45,9 +45,9 @@ class CustomSliverAppBar extends StatelessWidget {
                   children: [
                     SizedBox(height: Insets.small),
                     PositionCard(
-                      icon: Assets.assetsSvgRocket,
-                      title: 'Target position',
-                      subtitle: 'Senior Network Engineer',
+                      icon: Assets.assetsSvgPerson,
+                      title: context.l10n.currentPosition, // localized
+                      subtitle: 'Junior Network Engineer', // keep as parameter
                       iconColor: colorScheme.onPrimary,
                     ),
                   ],
@@ -72,9 +72,17 @@ class CustomSliverAppBar extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      SummaryItem(icon: Icons.badge_outlined, value: '11', label: 'Earned\nCertifications'),
+                      SummaryItem(
+                        icon: Icons.badge_outlined,
+                        value: '11',
+                        label: context.l10n.earnedCertifications,
+                      ),
                       Container(width: 1, height: 32, color: colorScheme.onPrimary.withOpacity(0.3)),
-                      SummaryItem(icon: Icons.flag_outlined, value: '11', label: 'Total\nCertifications'),
+                      SummaryItem(
+                        icon: Icons.flag_outlined,
+                        value: '11',
+                        label: context.l10n.totalCertifications,
+                      ),
                     ],
                   ),
                 ),

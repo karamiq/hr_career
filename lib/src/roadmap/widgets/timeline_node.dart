@@ -4,15 +4,14 @@ import 'package:app/core/theme/constant_colors.dart';
 
 class TimelineNode extends StatelessWidget {
   final bool isDone;
-  final bool isLast;
-  const TimelineNode({required this.isDone, required this.isLast, super.key});
+  const TimelineNode({required this.isDone, super.key});
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(Insets.extraSmall),
       decoration: BoxDecoration(
         borderRadius: BorderSize.extraSmallRadius,
-        border: Border.all(color: Theme.of(context).colorScheme.onBackground, width: 1.5),
+        border: Border.all(color: Theme.of(context).colorScheme.onBackground, width: 2),
         gradient: isDone
             ? ConstantColors.greenVibrant(direction: GradientDirection.vertical)
             : ConstantColors.yellowVibrant(direction: GradientDirection.vertical),

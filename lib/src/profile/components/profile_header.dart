@@ -14,9 +14,9 @@ class ProfileHeader extends StatelessWidget {
 
       decoration: BoxDecoration(
         gradient: ConstantColors.primaryGradient(),
-        borderRadius: const BorderRadius.only(
-          bottomLeft: Radius.circular(28),
-          bottomRight: Radius.circular(28),
+        borderRadius: BorderRadius.only(
+          bottomLeft: Radius.circular(BorderSize.large),
+          bottomRight: Radius.circular(BorderSize.large),
         ),
       ),
       child: SafeArea(

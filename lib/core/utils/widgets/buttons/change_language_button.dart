@@ -33,14 +33,6 @@ class ChangeLanguageButton extends HookConsumerWidget {
             value: 'ar',
             child: Text(" العربية ", style: style),
           ),
-          DropdownMenuItem(
-            value: 'ja',
-            child: Text("日本語", style: style),
-          ),
-          DropdownMenuItem(
-            value: 'ku',
-            child: Text("كوردي", style: style),
-          ),
         ],
         icon: GradientIcon(Icons.language_outlined),
         underline: const SizedBox.shrink(),

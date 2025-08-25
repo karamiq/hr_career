@@ -1,10 +1,8 @@
 // ignore_for_file: deprecated_member_use
 import 'package:app/utils/constants/assets.dart';
-import 'package:app/core/utils/extensions.dart' hide ValidatorX;
 import 'package:app/src/components/gradient_icon.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_svg/svg.dart';
 import '../validators/validators.dart';
 
 class PasswordFormField extends ConsumerWidget {
@@ -82,25 +80,24 @@ class PasswordFormField extends ConsumerWidget {
           controller: controller,
           focusNode: focusNode,
 
-          decoration:
-              decoration?.copyWith(
-                suffixIcon:
-                    decoration?.suffixIcon ??
-                    IconButton(
-                      color: theme.colorScheme.primary,
-                      iconSize: 20,
-                      icon: SvgPicture.asset(
-                        isObscured ? Assets.assetsSvgClosedEye : Assets.assetsSvgEye,
-                        color: context.colorScheme.secondary,
-                      ),
-                      onPressed: () => obscureText.value = !obscureText.value,
-                    ),
-                prefixIcon: decoration?.prefixIcon ?? prefixIcon,
-                hintText: decoration?.hintText ?? hintText,
-                labelText: decoration?.labelText ?? labelText,
-                errorText: errorText,
-              ) ??
-              defaultDecoration,
+          decoration: defaultDecoration.copyWith(
+            enabledBorder: decoration?.enabledBorder,
+            focusedBorder: decoration?.focusedBorder,
+            errorBorder: decoration?.errorBorder,
+            focusedErrorBorder: decoration?.focusedErrorBorder,
+            icon: decoration?.icon,
+            fillColor: decoration?.fillColor,
+            filled: decoration?.filled ?? true,
+            labelText: decoration?.labelText ?? labelText,
+            hintText: decoration?.hintText ?? hintText,
+            errorText: decoration?.errorText ?? errorText,
+            isDense: decoration?.isDense ?? true,
+            constraints: decoration?.constraints,
+            prefix: decoration?.prefix,
+            prefixIcon: decoration?.prefixIcon,
+            suffix: decoration?.suffix,
+            suffixIcon: decoration?.suffixIcon,
+          ),
           validator: (value) => ValidatorX.validate(ref, value, rules),
           obscureText: isObscured,
           keyboardType: keyboardType,

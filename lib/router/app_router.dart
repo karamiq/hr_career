@@ -6,6 +6,7 @@ import 'package:app/src/notification/requests_page.dart';
 import 'package:app/src/profile/profile_page.dart';
 import 'package:app/src/roadmap/roadmap_page.dart';
 import 'package:app/src/skills/skills_page.dart';
+import 'package:app/src/certifications/certifications_page.dart';
 import 'package:app/src/auth/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -50,6 +51,10 @@ final router = GoRouter(
           path: RoutesDocument.skills,
           pageBuilder: (context, state) => instanTransition(state, const SkillsPage()),
         ),
+        GoRoute(
+          path: RoutesDocument.certifications,
+          pageBuilder: (context, state) => instanTransition(state, const CertificationsPage()),
+        ),
         ShellRoute(
           pageBuilder: (context, state, child) => instanTransition(state, RequestsPage(child: child)),
           routes: [
@@ -76,6 +81,7 @@ class RoutesDocument {
   static const String roadmap = '/roadmap';
   static const String profile = '/profile';
   static const String skills = '/skills';
+  static const String certifications = '/certifications';
 
   static const String requestsHistory = '/requests/history';
   static const String requestsFormPage = '/requests/form';

@@ -1,6 +1,6 @@
-import 'package:app/core/network/dio_models.dart';
+import 'package:app/common_lib.dart';
 import 'package:app/src/roadmap/widgets/custom_sliver_app_bar.dart';
-import 'widgets/certification_card.dart';
+import 'package:app/src/roadmap/widgets/roadmap_certification_tile.dart';
 import 'package:flutter/material.dart';
 
 class RoadmapPage extends StatefulWidget {
@@ -30,13 +30,14 @@ class _RoadmapPageState extends State<RoadmapPage> {
       description:
           'Elite expert-level certification demonstrating mastery of complex enterprise networking solutions',
       percent: 0.5,
-      isDone: false,
+      isDone: true,
     ),
     CertificationStep(
       title: 'CCNA (Cisco Certified Network Associate)',
       description:
           'Foundation-level networking certification covering essential network fundamentals and practical skills',
       percent: 1,
+
       isDone: true,
     ),
     CertificationStep(
@@ -51,11 +52,9 @@ class _RoadmapPageState extends State<RoadmapPage> {
       description:
           'Elite expert-level certification demonstrating mastery of complex enterprise networking solutions',
       percent: 0.5,
-      isDone: false,
+      isDone: true,
     ),
   ];
-
-  int? _expandedIndex;
 
   @override
   Widget build(BuildContext context) {
@@ -66,26 +65,17 @@ class _RoadmapPageState extends State<RoadmapPage> {
         slivers: [
           CustomSliverAppBar(),
           SliverPadding(
-            padding: EdgeInsets.all(Insets.small),
-            sliver: SliverList(
-              delegate: SliverChildListDelegate([
-                SizedBox(height: Insets.extraLarge),
-                ...List.generate(_certSteps.length, (index) {
-                  final step = _certSteps[index];
-                  final isLast = index == _certSteps.length - 1;
-                  return GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        _expandedIndex = _expandedIndex == index ? null : index;
-                      });
-                    },
-                    child: CertificationCard(step: step, isLast: isLast),
-                  );
-                }),
-                Gap(navBarHeight),
-              ]),
+            padding: Insets.smallAll,
+            sliver: SliverList.builder(
+              itemCount: _certSteps.length,
+              itemBuilder: (context, index) {
+                final step = _certSteps[index];
+                final isLast = index == _certSteps.length - 1;
+                return RoadmapCertificationTile(step: step, isLast: isLast);
+              },
             ),
           ),
+          SliverGap(navBarHeight),
         ],
       ),
     );

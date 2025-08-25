@@ -5,10 +5,7 @@ class IsRequiredRule extends ValidatorRule {
   IsRequiredRule([super.errorMessage]);
 
   @override
-  Map<String, String> get defaultMessage => {
-    'en': 'field is required',
-    'ar': 'هذا الحقل مطلوب',
-  };
+  Map<String, String> get defaultMessage => {'en': 'field is required', 'ar': 'هذا الحقل مطلوب'};
 
   @override
   bool isValid(String? value) {

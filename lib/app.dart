@@ -65,12 +65,6 @@ class _AppState extends ConsumerState<App> {
         KurdishWidgetLocalizations.delegate,
       ],
       supportedLocales: AppLocalizations.supportedLocales,
-      // supportedLocales: const [
-      //   Locale('en', 'EN'), // English
-      //   Locale('ar', 'AR'), // Arabic
-      //   Locale('ja', "JA"),
-      //   Locale('ku', 'KU'), // Kurdish
-      // ],
       // Theme
       themeMode: settings.themeMode,
       darkTheme: theme.buildDarkTheme(),

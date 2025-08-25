@@ -65,6 +65,34 @@ class AppLocalizationsAr extends AppLocalizations {
   String get emailRuleMessage => 'الرجاء إدخال بريد إلكتروني صالح';
 
   @override
+  String get myCertifications => 'شهاداتي';
+
+  @override
+  String get professionalAchievements =>
+      'إنجازاتك المهنية والشهادات التي حصلت عليها';
+
+  @override
+  String get aboutThisCertification => 'حول هذه الشهادة';
+
+  @override
+  String get skillsCovered => 'المهارات المشمولة';
+
+  @override
+  String get certificationDetails => 'تفاصيل الشهادة';
+
+  @override
+  String get organization => 'المنظمة';
+
+  @override
+  String get level => 'المستوى';
+
+  @override
+  String get completionDate => 'تاريخ الإنجاز';
+
+  @override
+  String get expiryDate => 'تاريخ انتهاء الصلاحية';
+
+  @override
   String get requests => 'طلبات';
 
   @override
@@ -171,6 +199,18 @@ class AppLocalizationsAr extends AppLocalizations {
   String get search => 'بحث';
 
   @override
+  String get currentPosition => 'المنصب الحالي';
+
+  @override
+  String get targetPosition => 'المنصب المستهدف';
+
+  @override
+  String get earnedCertifications => 'الشهادات\nالمكتسبة';
+
+  @override
+  String get totalCertifications => 'إجمالي\nالشهادات';
+
+  @override
   String get login => 'تسجيل الدخول';
 
   @override
@@ -229,6 +269,82 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get areYouSureLogout => 'هل أنت متأكد من أنك تريد تسجيل الخروج؟';
+
+  @override
+  String get currentPassword => 'كلمة المرور الحالية';
+
+  @override
+  String get newPassword => 'كلمة المرور الجديدة';
+
+  @override
+  String get confirmNewPassword => 'تأكيد كلمة المرور الجديدة';
+
+  @override
+  String get enterCurrentPassword => 'أدخل كلمة المرور الحالية';
+
+  @override
+  String get enterNewPassword => 'أدخل كلمة المرور الجديدة';
+
+  @override
+  String get confirmNewPasswordHint => 'أكد كلمة المرور الجديدة';
+
+  @override
+  String get passwordRequirements => 'متطلبات كلمة المرور';
+
+  @override
+  String get atLeast8Characters => '8 أحرف على الأقل';
+
+  @override
+  String get differentFromCurrent => 'مختلفة عن كلمة المرور الحالية';
+
+  @override
+  String get mustMatchConfirmation => 'يجب أن تطابق كلمة المرور المؤكدة';
+
+  @override
+  String get passwordChangedSuccessfully => 'تم تغيير كلمة المرور بنجاح!';
+
+  @override
+  String get failedToChangePassword =>
+      'فشل في تغيير كلمة المرور. يرجى المحاولة مرة أخرى.';
+
+  @override
+  String get passwordsDoNotMatch => 'كلمات المرور غير متطابقة';
+
+  @override
+  String get newPasswordMustBeDifferent =>
+      'يجب أن تكون كلمة المرور الجديدة مختلفة عن كلمة المرور الحالية';
+
+  @override
+  String get aboutDialogContent =>
+      'تطبيق HR Career\n\nالإصدار: 1.0.0\n\nمرحبًا بك في تطبيق HR Career!\n\nالميزات:\n• إدارة ملفك الشخصي والمهني\n• رفع وتتبع الشهادات\n• إضافة وتحديث المهارات\n• إدارة حساب آمنة\n• دعم متعدد اللغات\n\nتم التطوير بواسطة: فريق Titanium\nللتواصل: info@titaniumteam.com\nالموقع: www.titaniumteam.com\n\nجميع البيانات محفوظة بأمان وخصوصيتك هي أولويتنا.\n\nشكرًا لاستخدامك تطبيقنا!';
+
+  @override
+  String get supportDialogContent =>
+      'تحتاج إلى مساعدة أو لديك أسئلة؟\n\n• البريد الإلكتروني: support@hrcareer.com\n• الهاتف: +964 123 456 7890\n• الدردشة المباشرة: متاحة داخل التطبيق خلال ساعات العمل\n\nساعات الدعم:\nالأحد - الخميس: 9:00 صباحًا - 5:00 مساءً (بتوقيت العراق)\n\nالموارد:\n• الأسئلة الشائعة: www.hrcareer.com/faq\n• مركز المساعدة: www.hrcareer.com/help\n\nنقدّر ملاحظاتك! يرجى إخبارنا كيف يمكننا تحسين تجربتك.';
+
+  @override
+  String get expert => 'خبير';
+
+  @override
+  String get advanced => 'متقدم';
+
+  @override
+  String get intermediate => 'متوسط';
+
+  @override
+  String get beginner => 'مبتدئ';
+
+  @override
+  String get totalPoints => 'إجمالي النقاط';
+
+  @override
+  String get average => 'المعدل';
+
+  @override
+  String get seniorLevel => 'مستوى متقدم';
+
+  @override
+  String get professionalDevelopmentOverview => 'نظرة عامة على التطوير المهني';
 
   @override
   String get defaultErrorMessage => 'حدث خطأ ما, يرجى المحاولة مرة أخرى';

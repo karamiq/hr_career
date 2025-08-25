@@ -19,6 +19,7 @@ class _HomePageState extends ConsumerState<HomePage> {
   Widget build(BuildContext context) {
     final settings = ref.watch(settingsProvider);
 
+    ElevatedButton(style: ElevatedButton.styleFrom(), onPressed: () {}, child: const Text('Press Me'));
     return Scaffold(
       body: Center(
         child: Column(

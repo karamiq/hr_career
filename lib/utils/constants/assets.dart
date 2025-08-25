@@ -46,6 +46,10 @@ class Assets {
   /// assets/svg/CameraPlus.svg
   static const String assetsSvgCameraPlus = "assets/svg/CameraPlus.svg";
 
+  /// Assets for assetsSvgCancel
+  /// assets/svg/cancel.svg
+  static const String assetsSvgCancel = "assets/svg/cancel.svg";
+
   /// Assets for assetsSvgCart
   /// assets/svg/cart.svg
   static const String assetsSvgCart = "assets/svg/cart.svg";

@@ -65,6 +65,34 @@ class AppLocalizationsEn extends AppLocalizations {
   String get emailRuleMessage => 'Please enter a valid email';
 
   @override
+  String get myCertifications => 'My Certifications';
+
+  @override
+  String get professionalAchievements =>
+      'Your professional achievements and earned certifications';
+
+  @override
+  String get aboutThisCertification => 'About this Certification';
+
+  @override
+  String get skillsCovered => 'Skills Covered';
+
+  @override
+  String get certificationDetails => 'Certification Details';
+
+  @override
+  String get organization => 'Organization';
+
+  @override
+  String get level => 'Level';
+
+  @override
+  String get completionDate => 'Completion Date';
+
+  @override
+  String get expiryDate => 'Expiry Date';
+
+  @override
   String get requests => 'Requests';
 
   @override
@@ -171,6 +199,18 @@ class AppLocalizationsEn extends AppLocalizations {
   String get search => 'Search';
 
   @override
+  String get currentPosition => 'Current position';
+
+  @override
+  String get targetPosition => 'Target position';
+
+  @override
+  String get earnedCertifications => 'Earned\nCertifications';
+
+  @override
+  String get totalCertifications => 'Total\nCertifications';
+
+  @override
   String get login => 'Login';
 
   @override
@@ -229,6 +269,83 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get areYouSureLogout => 'Are you sure you want to log out?';
+
+  @override
+  String get currentPassword => 'Current Password';
+
+  @override
+  String get newPassword => 'New Password';
+
+  @override
+  String get confirmNewPassword => 'Confirm New Password';
+
+  @override
+  String get enterCurrentPassword => 'Enter your current password';
+
+  @override
+  String get enterNewPassword => 'Enter your new password';
+
+  @override
+  String get confirmNewPasswordHint => 'Confirm your new password';
+
+  @override
+  String get passwordRequirements => 'Password Requirements';
+
+  @override
+  String get atLeast8Characters => 'At least 8 characters long';
+
+  @override
+  String get differentFromCurrent => 'Different from current password';
+
+  @override
+  String get mustMatchConfirmation => 'Must match confirmation password';
+
+  @override
+  String get passwordChangedSuccessfully => 'Password changed successfully!';
+
+  @override
+  String get failedToChangePassword =>
+      'Failed to change password. Please try again.';
+
+  @override
+  String get passwordsDoNotMatch => 'Passwords do not match';
+
+  @override
+  String get newPasswordMustBeDifferent =>
+      'New password must be different from current password';
+
+  @override
+  String get aboutDialogContent =>
+      'HR Career App\n\nVersion: 1.0.0\n\nWelcome to the HR Career App!\n\nFeatures:\n• Manage your personal and professional profile\n• Upload and track certifications\n• Add and update your skills\n• Secure account management\n• Multi-language support\n\nDeveloped by: Titanium Team\nContact: info@titaniumteam.com\nWebsite: www.titaniumteam.com\n\nAll data is securely stored and privacy is our top priority.\n\nThank you for using our app!';
+
+  @override
+  String get supportDialogContent =>
+      'Need help or have questions?\n\n• Email: support@hrcareer.com\n• Phone: +964 123 456 7890\n• Live chat: Available in-app during business hours\n\nSupport Hours:\nSunday - Thursday: 9:00 AM - 5:00 PM (Iraq Time)\n\nResources:\n• FAQs: www.hrcareer.com/faq\n• Help Center: www.hrcareer.com/help\n\nWe value your feedback! Please let us know how we can improve your experience.';
+
+  @override
+  String get expert => 'Expert';
+
+  @override
+  String get advanced => 'Advanced';
+
+  @override
+  String get intermediate => 'Intermediate';
+
+  @override
+  String get beginner => 'Beginner';
+
+  @override
+  String get totalPoints => 'Total Points';
+
+  @override
+  String get average => 'Average';
+
+  @override
+  String get seniorLevel => 'Senior Level';
+
+  @override
+  String get professionalDevelopmentOverview =>
+      'Professional Development Overview';
 
   @override
   String get defaultErrorMessage => 'An error occurred, please try again later';

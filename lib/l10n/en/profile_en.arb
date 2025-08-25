@@ -1,6 +1,5 @@
-
-
-  {
+{
+  "@@locale": "en",
     "accountDetails": "Account Details",
     "changePassword": "Change password",
     "documents": "Documents",
@@ -9,6 +8,21 @@
     "about": "About",
     "support": "Support",
     "english": "English",
-    "areYouSureLogout": "Are you sure you want to log out?"
-  }
-  
+    "areYouSureLogout": "Are you sure you want to log out?",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmNewPassword": "Confirm New Password",
+    "enterCurrentPassword": "Enter your current password",
+    "enterNewPassword": "Enter your new password",
+    "confirmNewPasswordHint": "Confirm your new password",
+    "passwordRequirements": "Password Requirements",
+    "atLeast8Characters": "At least 8 characters long",
+    "differentFromCurrent": "Different from current password",
+    "mustMatchConfirmation": "Must match confirmation password",
+    "passwordChangedSuccessfully": "Password changed successfully!",
+    "failedToChangePassword": "Failed to change password. Please try again.",
+    "passwordsDoNotMatch": "Passwords do not match",
+  "newPasswordMustBeDifferent": "New password must be different from current password",
+  "aboutDialogContent": "HR Career App\n\nVersion: 1.0.0\n\nWelcome to the HR Career App!\n\nFeatures:\n• Manage your personal and professional profile\n• Upload and track certifications\n• Add and update your skills\n• Secure account management\n• Multi-language support\n\nDeveloped by: Titanium Team\nContact: info@titaniumteam.com\nWebsite: www.titaniumteam.com\n\nAll data is securely stored and privacy is our top priority.\n\nThank you for using our app!",
+  "supportDialogContent": "Need help or have questions?\n\n• Email: support@hrcareer.com\n• Phone: +964 123 456 7890\n• Live chat: Available in-app during business hours\n\nSupport Hours:\nSunday - Thursday: 9:00 AM - 5:00 PM (Iraq Time)\n\nResources:\n• FAQs: www.hrcareer.com/faq\n• Help Center: www.hrcareer.com/help\n\nWe value your feedback! Please let us know how we can improve your experience."
+}

@@ -1,12 +1,30 @@
 {
+  
   "accountDetails": "تفاصيل الحساب",
   "changePassword": "تغيير كلمة المرور",
+  "@@locale": "ar",
   "documents": "المستندات",
   "certifications": "الشهادات",
   "skills": "المهارات",
   "about": "حول",
   "support": "الدعم",
   "english": "الإنجليزية",
-  "areYouSureLogout": "هل أنت متأكد من أنك تريد تسجيل الخروج؟"
+  "areYouSureLogout": "هل أنت متأكد من أنك تريد تسجيل الخروج؟",
+  "currentPassword": "كلمة المرور الحالية",
+  "newPassword": "كلمة المرور الجديدة",
+  "confirmNewPassword": "تأكيد كلمة المرور الجديدة",
+  "enterCurrentPassword": "أدخل كلمة المرور الحالية",
+  "enterNewPassword": "أدخل كلمة المرور الجديدة",
+  "confirmNewPasswordHint": "أكد كلمة المرور الجديدة",
+  "passwordRequirements": "متطلبات كلمة المرور",
+  "atLeast8Characters": "8 أحرف على الأقل",
+  "differentFromCurrent": "مختلفة عن كلمة المرور الحالية",
+  "mustMatchConfirmation": "يجب أن تطابق كلمة المرور المؤكدة",
+  "passwordChangedSuccessfully": "تم تغيير كلمة المرور بنجاح!",
+  "failedToChangePassword": "فشل في تغيير كلمة المرور. يرجى المحاولة مرة أخرى.",
+  "passwordsDoNotMatch": "كلمات المرور غير متطابقة",
+  "newPasswordMustBeDifferent": "يجب أن تكون كلمة المرور الجديدة مختلفة عن كلمة المرور الحالية",
+  "aboutDialogContent": "تطبيق HR Career\n\nالإصدار: 1.0.0\n\nمرحبًا بك في تطبيق HR Career!\n\nالميزات:\n• إدارة ملفك الشخصي والمهني\n• رفع وتتبع الشهادات\n• إضافة وتحديث المهارات\n• إدارة حساب آمنة\n• دعم متعدد اللغات\n\nتم التطوير بواسطة: فريق Titanium\nللتواصل: info@titaniumteam.com\nالموقع: www.titaniumteam.com\n\nجميع البيانات محفوظة بأمان وخصوصيتك هي أولويتنا.\n\nشكرًا لاستخدامك تطبيقنا!",
+  "supportDialogContent": "تحتاج إلى مساعدة أو لديك أسئلة؟\n\n• البريد الإلكتروني: support@hrcareer.com\n• الهاتف: +964 123 456 7890\n• الدردشة المباشرة: متاحة داخل التطبيق خلال ساعات العمل\n\nساعات الدعم:\nالأحد - الخميس: 9:00 صباحًا - 5:00 مساءً (بتوقيت العراق)\n\nالموارد:\n• الأسئلة الشائعة: www.hrcareer.com/faq\n• مركز المساعدة: www.hrcareer.com/help\n\nنقدّر ملاحظاتك! يرجى إخبارنا كيف يمكننا تحسين تجربتك."
 }
 

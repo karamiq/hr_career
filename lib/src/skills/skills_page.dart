@@ -30,7 +30,7 @@ class SkillsPage extends StatelessWidget {
             flexibleSpace: Container(
               decoration: BoxDecoration(
                 gradient: ConstantColors.primaryGradient(),
-                borderRadius: BorderSize.smallRadius,
+                borderRadius: BorderSize.largeRadius,
               ),
               child: FlexibleSpaceBar(
                 title: Padding(
@@ -40,17 +40,17 @@ class SkillsPage extends StatelessWidget {
                     children: [
                       StatsCard(
                         value: SkillStats.calculateTotalPoints(softSkills).toString(),
-                        label: 'Total Points',
+                        label: context.l10n.totalPoints,
                         icon: Icons.analytics_outlined,
                       ),
                       StatsCard(
                         value: (softSkills.length).toString(),
-                        label: 'Skills',
+                        label: context.l10n.skills,
                         icon: Icons.workspace_premium,
                       ),
                       StatsCard(
                         value: SkillStats.formatPercentage(SkillStats.calculateAveragePercentage(softSkills)),
-                        label: 'Average',
+                        label: context.l10n.average,
                         icon: Icons.show_chart,
                       ),
                     ],
@@ -77,7 +77,7 @@ class SkillsPage extends StatelessWidget {
                                 Icon(Icons.trending_up, color: ConstantColors.white, size: 16),
                                 const SizedBox(width: 8),
                                 Text(
-                                  'Senior Level',
+                                  context.l10n.seniorLevel,
                                   style: TextStyle(
                                     color: ConstantColors.white,
                                     fontSize: 12,
@@ -89,18 +89,30 @@ class SkillsPage extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 40),
-                        Text(
-                          context.l10n.skills,
-                          style: TextStyle(
-                            color: ConstantColors.white,
-                            fontSize: 36,
-                            fontWeight: FontWeight.bold,
-                            letterSpacing: -1,
-                          ),
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SvgPicture.asset(
+                              Assets.assetsSvgSkill,
+                              color: ConstantColors.white,
+                              height: 40,
+                              width: 40,
+                            ),
+                            const Gap(Insets.extraSmall),
+                            Text(
+                              context.l10n.skills,
+                              style: TextStyle(
+                                color: ConstantColors.white,
+                                fontSize: 36,
+                                fontWeight: FontWeight.bold,
+                                letterSpacing: -1,
+                              ),
+                            ),
+                          ],
                         ),
                         const SizedBox(height: 8),
                         Text(
-                          'Professional Development Overview',
+                          context.l10n.professionalDevelopmentOverview,
                           style: TextStyle(
                             color: ConstantColors.white.withOpacity(0.8),
                             fontSize: 16,
@@ -132,17 +144,6 @@ class SkillsPage extends StatelessWidget {
           SliverGap(navBarHeight * 1.25),
         ],
       ),
-    );
-  }
-
-  Widget _buildModernSkillSection(BuildContext context, String title, List<Skill> skills, IconData icon) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        ...skills.asMap().entries.map(
-          (entry) => ModernSkillCard(skill: entry.value, gradient: VibrantGradients.getByIndex(entry.key)),
-        ),
-      ],
     );
   }
 }

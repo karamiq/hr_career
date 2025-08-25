@@ -6,6 +6,8 @@ class AppDialog extends StatelessWidget {
   final String title;
   final String? content;
   final Widget? icon;
+
+  final bool? showCloseButton;
   final List<Widget>? actions;
   final Widget? child;
   final EdgeInsetsGeometry? contentPadding;
@@ -24,6 +26,7 @@ class AppDialog extends StatelessWidget {
     this.backgroundColor,
     this.dialogColor,
     this.borderRadius,
+    this.showCloseButton = true,
   });
 
   @override
@@ -52,8 +55,35 @@ class AppDialog extends StatelessWidget {
             child: SingleChildScrollView(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  if (showCloseButton == true)
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            gradient: ConstantColors.redVibrant(),
+                          ),
+                          child: ClipRRect(
+                            borderRadius: BorderSize.extraLargeRadius,
+                            child: Material(
+                              color: Colors.transparent,
+                              child: InkWell(
+                                onTap: () => context.pop(),
+                                child: SvgPicture.asset(
+                                  Assets.assetsSvgCancel,
+                                  color: ConstantColors.white,
+                                  height: 40,
+                                  width: 40,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   if (icon != null)
                     Padding(
                       padding: const EdgeInsets.only(bottom: 12),
@@ -65,6 +95,7 @@ class AppDialog extends StatelessWidget {
                     overflow: TextOverflow.ellipsis,
                     maxLines: 2,
                   ),
+                  const Gap(Insets.medium),
                   if (content != null)
                     Container(
                       width: double.infinity,

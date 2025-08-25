@@ -1,4 +1,3 @@
-import '../../../core/theme/constant_colors.dart';
 import '../../../data/models/skill_model.dart';
 
 // Enhanced soft skills data

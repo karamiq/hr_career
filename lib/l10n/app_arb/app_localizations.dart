@@ -7,8 +7,6 @@ import 'package:intl/intl.dart' as intl;
 
 import 'app_localizations_ar.dart';
 import 'app_localizations_en.dart';
-import 'app_localizations_ja.dart';
-import 'app_localizations_ku.dart';
 
 // ignore_for_file: type=lint
 
@@ -98,8 +96,6 @@ abstract class AppLocalizations {
   static const List<Locale> supportedLocales = <Locale>[
     Locale('ar'),
     Locale('en'),
-    Locale('ja'),
-    Locale('ku'),
   ];
 
   /// No description provided for @fieldRequired.
@@ -203,6 +199,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Please enter a valid email'**
   String get emailRuleMessage;
+
+  /// No description provided for @myCertifications.
+  ///
+  /// In en, this message translates to:
+  /// **'My Certifications'**
+  String get myCertifications;
+
+  /// No description provided for @professionalAchievements.
+  ///
+  /// In en, this message translates to:
+  /// **'Your professional achievements and earned certifications'**
+  String get professionalAchievements;
+
+  /// No description provided for @aboutThisCertification.
+  ///
+  /// In en, this message translates to:
+  /// **'About this Certification'**
+  String get aboutThisCertification;
+
+  /// No description provided for @skillsCovered.
+  ///
+  /// In en, this message translates to:
+  /// **'Skills Covered'**
+  String get skillsCovered;
+
+  /// No description provided for @certificationDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'Certification Details'**
+  String get certificationDetails;
+
+  /// No description provided for @organization.
+  ///
+  /// In en, this message translates to:
+  /// **'Organization'**
+  String get organization;
+
+  /// No description provided for @level.
+  ///
+  /// In en, this message translates to:
+  /// **'Level'**
+  String get level;
+
+  /// No description provided for @completionDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Completion Date'**
+  String get completionDate;
+
+  /// No description provided for @expiryDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Expiry Date'**
+  String get expiryDate;
 
   /// No description provided for @requests.
   ///
@@ -414,6 +464,30 @@ abstract class AppLocalizations {
   /// **'Search'**
   String get search;
 
+  /// No description provided for @currentPosition.
+  ///
+  /// In en, this message translates to:
+  /// **'Current position'**
+  String get currentPosition;
+
+  /// No description provided for @targetPosition.
+  ///
+  /// In en, this message translates to:
+  /// **'Target position'**
+  String get targetPosition;
+
+  /// No description provided for @earnedCertifications.
+  ///
+  /// In en, this message translates to:
+  /// **'Earned\nCertifications'**
+  String get earnedCertifications;
+
+  /// No description provided for @totalCertifications.
+  ///
+  /// In en, this message translates to:
+  /// **'Total\nCertifications'**
+  String get totalCertifications;
+
   /// No description provided for @login.
   ///
   /// In en, this message translates to:
@@ -534,6 +608,150 @@ abstract class AppLocalizations {
   /// **'Are you sure you want to log out?'**
   String get areYouSureLogout;
 
+  /// No description provided for @currentPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Current Password'**
+  String get currentPassword;
+
+  /// No description provided for @newPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'New Password'**
+  String get newPassword;
+
+  /// No description provided for @confirmNewPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm New Password'**
+  String get confirmNewPassword;
+
+  /// No description provided for @enterCurrentPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your current password'**
+  String get enterCurrentPassword;
+
+  /// No description provided for @enterNewPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your new password'**
+  String get enterNewPassword;
+
+  /// No description provided for @confirmNewPasswordHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm your new password'**
+  String get confirmNewPasswordHint;
+
+  /// No description provided for @passwordRequirements.
+  ///
+  /// In en, this message translates to:
+  /// **'Password Requirements'**
+  String get passwordRequirements;
+
+  /// No description provided for @atLeast8Characters.
+  ///
+  /// In en, this message translates to:
+  /// **'At least 8 characters long'**
+  String get atLeast8Characters;
+
+  /// No description provided for @differentFromCurrent.
+  ///
+  /// In en, this message translates to:
+  /// **'Different from current password'**
+  String get differentFromCurrent;
+
+  /// No description provided for @mustMatchConfirmation.
+  ///
+  /// In en, this message translates to:
+  /// **'Must match confirmation password'**
+  String get mustMatchConfirmation;
+
+  /// No description provided for @passwordChangedSuccessfully.
+  ///
+  /// In en, this message translates to:
+  /// **'Password changed successfully!'**
+  String get passwordChangedSuccessfully;
+
+  /// No description provided for @failedToChangePassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to change password. Please try again.'**
+  String get failedToChangePassword;
+
+  /// No description provided for @passwordsDoNotMatch.
+  ///
+  /// In en, this message translates to:
+  /// **'Passwords do not match'**
+  String get passwordsDoNotMatch;
+
+  /// No description provided for @newPasswordMustBeDifferent.
+  ///
+  /// In en, this message translates to:
+  /// **'New password must be different from current password'**
+  String get newPasswordMustBeDifferent;
+
+  /// No description provided for @aboutDialogContent.
+  ///
+  /// In en, this message translates to:
+  /// **'HR Career App\n\nVersion: 1.0.0\n\nWelcome to the HR Career App!\n\nFeatures:\n• Manage your personal and professional profile\n• Upload and track certifications\n• Add and update your skills\n• Secure account management\n• Multi-language support\n\nDeveloped by: Titanium Team\nContact: info@titaniumteam.com\nWebsite: www.titaniumteam.com\n\nAll data is securely stored and privacy is our top priority.\n\nThank you for using our app!'**
+  String get aboutDialogContent;
+
+  /// No description provided for @supportDialogContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Need help or have questions?\n\n• Email: support@hrcareer.com\n• Phone: +964 123 456 7890\n• Live chat: Available in-app during business hours\n\nSupport Hours:\nSunday - Thursday: 9:00 AM - 5:00 PM (Iraq Time)\n\nResources:\n• FAQs: www.hrcareer.com/faq\n• Help Center: www.hrcareer.com/help\n\nWe value your feedback! Please let us know how we can improve your experience.'**
+  String get supportDialogContent;
+
+  /// No description provided for @expert.
+  ///
+  /// In en, this message translates to:
+  /// **'Expert'**
+  String get expert;
+
+  /// No description provided for @advanced.
+  ///
+  /// In en, this message translates to:
+  /// **'Advanced'**
+  String get advanced;
+
+  /// No description provided for @intermediate.
+  ///
+  /// In en, this message translates to:
+  /// **'Intermediate'**
+  String get intermediate;
+
+  /// No description provided for @beginner.
+  ///
+  /// In en, this message translates to:
+  /// **'Beginner'**
+  String get beginner;
+
+  /// No description provided for @totalPoints.
+  ///
+  /// In en, this message translates to:
+  /// **'Total Points'**
+  String get totalPoints;
+
+  /// No description provided for @average.
+  ///
+  /// In en, this message translates to:
+  /// **'Average'**
+  String get average;
+
+  /// No description provided for @seniorLevel.
+  ///
+  /// In en, this message translates to:
+  /// **'Senior Level'**
+  String get seniorLevel;
+
+  /// No description provided for @professionalDevelopmentOverview.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional Development Overview'**
+  String get professionalDevelopmentOverview;
+
   /// No description provided for @defaultErrorMessage.
   ///
   /// In en, this message translates to:
@@ -564,7 +782,7 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) =>
-      <String>['ar', 'en', 'ja', 'ku'].contains(locale.languageCode);
+      <String>['ar', 'en'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -577,10 +795,6 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsAr();
     case 'en':
       return AppLocalizationsEn();
-    case 'ja':
-      return AppLocalizationsJa();
-    case 'ku':
-      return AppLocalizationsKu();
   }
 
   throw FlutterError(

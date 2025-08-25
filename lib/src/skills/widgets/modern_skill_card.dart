@@ -1,3 +1,4 @@
+import 'package:app/core/network/dio_models.dart';
 import 'package:app/core/theme/constant_colors.dart';
 import 'package:app/core/utils/constants/sizes.dart';
 import 'package:app/data/models/skill_model.dart';
@@ -9,15 +10,15 @@ class ModernSkillCard extends StatelessWidget {
 
   const ModernSkillCard({super.key, required this.skill, required this.gradient});
 
-  String get levelName {
+  String levelName(BuildContext context) {
     if (skill.points >= 30) {
-      return 'Expert';
+      return context.l10n.expert;
     } else if (skill.points >= 20) {
-      return 'Advanced';
+      return context.l10n.advanced;
     } else if (skill.points >= 10) {
-      return 'Intermediate';
+      return context.l10n.intermediate;
     } else {
-      return 'Beginner';
+      return context.l10n.beginner;
     }
   }
 
@@ -110,7 +111,7 @@ class ModernSkillCard extends StatelessWidget {
                           border: Border.all(color: ConstantColors.white.withOpacity(0.3)),
                         ),
                         child: Text(
-                          levelName,
+                          levelName(context),
                           style: const TextStyle(
                             color: ConstantColors.white,
                             fontSize: 12,
