@@ -1,6 +1,5 @@
 import 'package:app/core/network/dio_models.dart';
 import 'package:app/core/theme/constant_colors.dart';
-import 'package:app/core/utils/constants/sizes.dart';
 import 'package:app/data/models/skill_model.dart';
 import 'package:flutter/material.dart';
 

@@ -2,7 +2,6 @@ import 'package:app/src/skills/widgets/stats_card.dart';
 import 'package:flutter/material.dart';
 import 'package:app/common_lib.dart';
 import '../../core/theme/app_theme.dart';
-import '../../data/models/skill_model.dart';
 import 'widgets/modern_skill_card.dart';
 import 'data/skills_data.dart';
 import 'utils/skill_stats.dart';
